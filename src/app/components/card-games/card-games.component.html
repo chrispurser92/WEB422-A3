@@ -1,0 +1,15 @@
+
+
+<div class="card-games-container">
+    <h1>Card Games</h1>
+  
+    <div *ngIf="cardGames.length > 0" style="display:flex;">
+      <!-- Use the CardsComponent to display card games -->
+      <app-cards [games]="cardGames"></app-cards>
+    </div>
+  
+    <div *ngIf="cardGames.length === 0">
+      <p>No card games found.</p>
+    </div>
+  </div>
+  

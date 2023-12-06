@@ -1,0 +1,9 @@
+<div class="home-container">
+    <div *ngIf="games.length > 0">
+      <app-cards [games]="games" [searchQuery]="searchTerm"></app-cards>
+    </div>
+    <div *ngIf="games.length === 0">
+      <p>No games found.</p>
+    </div>
+  </div>
+  

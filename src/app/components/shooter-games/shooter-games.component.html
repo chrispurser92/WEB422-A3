@@ -1,0 +1,15 @@
+<!-- shooter-games.component.html -->
+
+<div class="shooter-games-container">
+    <h1>Shooter Games</h1>
+  
+    <div *ngIf="shooterGames.length > 0">
+      <!-- Use the CardsComponent to display shooter games -->
+      <app-cards [games]="shooterGames"></app-cards>
+    </div>
+  
+    <div *ngIf="shooterGames.length === 0">
+      <p>No shooter games found.</p>
+    </div>
+  </div>
+  

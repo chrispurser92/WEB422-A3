@@ -1,0 +1,6 @@
+<div class="searchBar-wrap" style="width: 95vw; margin-left:5%; border: 1px solid black; background-color: black;">
+    <form class="d-flex">
+        <input class="form-control me-4" style="width: 30%; margin-left: 40%;" type="search" [(ngModel)]="searchTerm" name="searchTerm" placeholder="Search by title" aria-label="Search">
+        <button class="btn btn-success" (click)="onSearch()" type="submit">Search</button>
+      </form>
+</div>

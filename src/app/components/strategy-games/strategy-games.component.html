@@ -1,0 +1,15 @@
+
+
+<div class="strategy-games-container">
+    <h1>Strategy Games</h1>
+  
+    <div *ngIf="strategyGames.length > 0">
+      <!-- Use the CardsComponent to display shooter games -->
+      <app-cards [games]="strategyGames"></app-cards>
+    </div>
+  
+    <div *ngIf="strategyGames.length === 0">
+      <p>No strategy games found.</p>
+    </div>
+  </div>
+  
